@@ -57,14 +57,14 @@
                 <property id="port" description="Port number" defaultValue="${port}"/>
                 <property id="dbname" description="Database name" defaultValue="${database}"/>
                 <property id="username" description="User name" defaultValue="${user}"/>
-                <property id="password" description="User password" defaultValue="${password}"/>
+                <property id="password" description="密码" defaultValue="${password}"/>
             </propertyGroup>
         </fdw>
         <fdw id="oracle" fdwId="oracle_fdw" databases="oracle" name="Oracle" description="Oracle FDW" docURL="https://github.com/laurenz/oracle_fdw">
             <propertyGroup label="Options">
                 <property id="dbserver" description="Database connection string" defaultValue="//${host}:${port}/${database}"/>
                 <property id="user" description="User name" defaultValue="${user}"/>
-                <property id="password" description="User password" defaultValue="${password}"/>
+                <property id="password" description="密码" defaultValue="${password}"/>
             </propertyGroup>
         </fdw>
         <fdw id="odbc" fdwId="odbc_fdw" databases="odbc" name="ODBC" description="ODBC FDW by CartoDB" docURL="https://github.com/CartoDB/odbc_fdw">
