@@ -23,8 +23,8 @@
 
                 <property id="authType" label="Authentication type" type="string" description="SSH authentication type" validValues="PASSWORD,PUBLIC_KEY,AGENT"/>
 
-                <property id="user" label="User name" type="string" description="SSH target user name"/>
-                <property id="password" label="User password" type="string" description="SSH target user password"/>
+                <property id="user" label="用户名" type="string" description="SSH target user name"/>
+                <property id="password" label="密码" type="string" description="SSH target user password"/>
                 <property id="keyValue" label="Private key path" type="file" description="SSH private key path" features="multiline,secured,password"/>
             </propertyGroup>
             <propertyGroup label="SSH Advanced Settings">

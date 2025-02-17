@@ -76,8 +76,8 @@
             default="true">
 
             <propertyGroup label="Database user">
-                <property id="user" label="User" type="string"/>
-                <property id="password" label="Password" type="string" features="password"/>
+                <property id="user" label="用户名" type="string"/>
+                <property id="password" label="密码" type="string" features="password"/>
             </propertyGroup>
 
         </authModel>
