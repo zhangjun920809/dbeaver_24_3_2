@@ -42,6 +42,31 @@ public interface SMAuthController {
         boolean forceSessionsLogout
     ) throws DBException;
 
+    default  SMAuthInfo authenticateSSO(
+            @NotNull String appSessionId,
+            @NotNull String user,
+//            @NotNull String cookiePID,
+            @Nullable String previousSmSessionId,
+            @NotNull Map<String, Object> sessionParameters,
+            @NotNull SMSessionType sessionType,
+            @NotNull String authProviderId,
+            @Nullable String authProviderConfigurationId,
+            @NotNull Map<String, Object> userCredentials,
+            boolean forceSessionsLogout
+    ) throws DBException{return null;};
+
+    default  SMAuthInfo authenticateCookie(
+            @NotNull String appSessionId,
+            Object response,
+            @Nullable String previousSmSessionId,
+            @NotNull Map<String, Object> sessionParameters,
+            @NotNull SMSessionType sessionType,
+            @NotNull String authProviderId,
+            @Nullable String authProviderConfigurationId,
+            @NotNull Map<String, Object> userCredentials,
+            boolean forceSessionsLogout
+    ) throws DBException{return null;};
+
     SMAuthInfo getAuthStatus(@NotNull String authId) throws DBException;
 
     @Nullable

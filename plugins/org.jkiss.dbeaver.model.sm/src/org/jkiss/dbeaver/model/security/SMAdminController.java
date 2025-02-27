@@ -134,6 +134,12 @@ public interface SMAdminController extends SMController {
         @NotNull Map<String, Object> credentials
     ) throws DBException;
 
+    void setUserCredentialsSSO(
+            @NotNull String userId,
+            @NotNull String authProviderId,
+            @NotNull Map<String, Object> credentials
+    ) throws DBException;
+
     /**
      * Delete user credentials for specified provider.
      *
